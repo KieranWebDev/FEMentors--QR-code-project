@@ -30,7 +30,7 @@ main {
   background-color: var(--white);
   border-radius: 12px;
   padding: 1rem;
-  max-width: 375px;
+  max-width: 340px;
   margin: 3rem auto;
 }
 
@@ -39,8 +39,13 @@ main img {
   border-radius: 12px;
 }
 
-.text-container {
-  /* padding: 0 1rem; */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
 }
 
 main h2 {
@@ -48,16 +53,13 @@ main h2 {
   font-weight: 700;
   padding: 0 0.8rem;
 }
-.text-container p {
+main p {
   text-align: center;
   color: var(--grayish-blue);
   padding: 0 1.5rem;
   font-size: 1rem;
 }
 
-.attribution {
-  text-align: center;
-}
 @media (max-width: 350px) {
   main h2 {
     text-align: center;
